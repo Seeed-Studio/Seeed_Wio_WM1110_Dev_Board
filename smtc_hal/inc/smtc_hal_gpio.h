@@ -49,6 +49,8 @@ extern "C" {
 
 void hal_gpio_init( void );
 
+void hal_gpio_deinit( uint32_t pin );
+
 void hal_gpio_task_init( void );
 
 void hal_gpio_init_in( uint32_t pin, const hal_gpio_pull_mode_t pull_mode, const hal_gpio_irq_mode_t irq_mode, hal_gpio_irq_t* irq );
